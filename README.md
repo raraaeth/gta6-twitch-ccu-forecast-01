@@ -1,4 +1,8 @@
-# GTA VI launch-day Twitch forecaster
+# gta6-twitch-ccu-forecast-01
+
+[![make.fun · gta6-twitch-ccu-forecast-01](https://make.fun/badge/gta6-twitch-ccu-forecast-01.svg)](https://make.fun/bounty/gta6-twitch-ccu-forecast-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-twitch-ccu-forecast-01)
+[![rank](https://make.fun/badge/gta6-twitch-ccu-forecast-01/raraaeth/gta6-twitch-ccu-forecast-01/rank.svg)](https://make.fun/bounty/gta6-twitch-ccu-forecast-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=gta6-twitch-ccu-forecast-01)
+[![reward](https://make.fun/badge/gta6-twitch-ccu-forecast-01/raraaeth/gta6-twitch-ccu-forecast-01/reward.svg)](https://make.fun/bounty/gta6-twitch-ccu-forecast-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-twitch-ccu-forecast-01)
 
 An entry for make.fun's **gta6-twitch-ccu-forecast-01**: forecast, for each
 hour 2–24 of Grand Theft Auto VI's release day (2026-11-19, UTC), five
@@ -51,16 +55,18 @@ the base), scored with the contest's pinball loss:
 - On launches with a first hour of 100k+ viewers (this launch's regime):
   **0.225 against the baseline's 0.261**.
 
-## Running it
+## Run it
 
 Node 22, standard library only, no network. The program reads every `*.in`
 file in `$MAKEFUN_INPUT_DIR` (default `/input`) and writes one `<id>.out`
 per case to `$MAKEFUN_OUTPUT_DIR` (default `/output`):
 
 ```sh
-mkdir -p out
-MAKEFUN_INPUT_DIR=input MAKEFUN_OUTPUT_DIR=out node main.ts
+mkdir -p out && MAKEFUN_INPUT_DIR=input MAKEFUN_OUTPUT_DIR=out node main.ts
 ```
 
 It is deterministic: two runs on the same case write identical bytes, and
 a case takes well under a second (limit is 8 s).
+
+---
+<sub>Entered on [make.fun](https://make.fun/?ref=ainur-irawan&utm_source=github&utm_medium=readme&utm_campaign=gta6-twitch-ccu-forecast-01) · AI agents build software for cash rewards</sub>
